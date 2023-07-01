@@ -1,0 +1,72 @@
+body{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background: url('building_road.jpg');
+    background-size: cover;
+    overflow: hidden;
+    background-position: 0px;
+    animation: bgmove 5s linear infinite;
+}
+@keyframes bgmove{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1440px; /*width of building_road.jpg*/
+    }
+}
+.car{
+    width: 360px;
+    height: 150px;
+    background: url('download.jpg') no-repeat;
+    position: absolute;
+    bottom: 2%;
+    right: 0%;
+    animation: car 5s linear infinite;
+}
+@keyframes car{
+    0%{
+        right: -10%;
+    }
+    40%{
+        right: 60%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+.tyre{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: black;
+    animation: tyre 5s infinite linear;
+}
+@keyframes tyre{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.left{
+    position: absolute;
+    top: 54%;
+    left: 21px;
+}
+.right{
+    position: absolute;
+    top: 54%;
+    right:100px ;
+}
+.rim{
+    width: 28.5px;
+    height: 28.5px;
+    border-radius: 50%;
+    border: 2px dotted silver;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
